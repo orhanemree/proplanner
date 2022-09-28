@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply
+    select-none
+    flex items-center justify-center
+}
+
+.week {
+    @apply
+    grid
+    grid-cols-[50px_repeat(7,_minmax(0,_1fr))]
+    gap-1
+    text-center
+}
+
+.week input {
+    @apply
+    bg-transparent
+    outline-none
+    w-full
+    text-center
+}
+
+.day {
+    @apply
+    flex
+    items-center justify-center
+    border border-stone-900
+    min-h-[50px]
+    min-w-[100px]
+    py-0.5 px-2
+}
+
+label {
+    @apply
+    flex items-center justify-center
+    cursor-pointer
+    gap-2
+}
+
+label input {
+    @apply
+    cursor-pointer
+    accent-pink-800
+}
+
+.download {
+    @apply
+    border border-black
+    px-2 py-0.5
+    bg-pink-800
+    text-white
+    rounded
+}
+
+footer > * {
+    @apply
+    text-pink-700
+}
+
+footer > a {
+    @apply
+    underline
+}
